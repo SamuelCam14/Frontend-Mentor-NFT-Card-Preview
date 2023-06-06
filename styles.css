@@ -1,0 +1,142 @@
+/* GENERAL CSS */
+:root {
+    --primary-color: #8bacda;
+    --secondary-color: hsl(178, 100%, 50%);
+}
+
+/* font-family: 'Outfit', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    font-size: 18px;
+}
+
+body{
+    background-color: hsl(216, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ==================== MOBILE FIRST CSS ==================== */
+
+/* ==================== PREVIEW CARD CSS ==================== */
+
+article.preview-card {
+    width: 90%;
+    max-width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 16px;
+}
+
+/* ===================== IMAGES ===================== */
+
+.nft-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ==================== TEXT STYLE ==================== */
+
+.nft-info h1 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nft-info h1:hover {
+    color: var(--secondary-color);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nft-info p {
+    color: #a7b8d1e5 ;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+div.price-spaceb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-spaceb span.nft-price {
+    color: var(--secondary-color);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center; /* Alinea vertical icono & texto */
+}
+
+.price-spaceb span.nft-price img {
+    margin-right: 5px; /* Espacio entre el ícono y el texto del precio */
+}
+
+.price-spaceb span.time-remaining {
+    color: #a7b8d1e5;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center; /* Alinea vertical icono & texto */
+}
+
+.price-spaceb span.time-remaining img {
+    margin-right: 5px; /* Espacio entre el ícono y el texto del precio */
+}
+
+.preview-card hr.divider-price {
+    border: none;
+    border-top: 1px hsl(215, 32%, 27%) solid;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* ==================== FOOTER STYLE ===================== */
+
+footer.author span {
+    display: flex;
+    align-items: center;
+    color: #a7b8d1e5;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+footer.author span em {
+    color: white;
+    font-style: normal;
+}
+
+footer.author span em:hover {
+    color: var(--secondary-color);
+    font-style: normal;
+    cursor: pointer;
+}
+
+footer.author span img {
+    width: 2rem;
+    border: solid white 1px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+/* ==================== DESKTOP CSS STYLE ==================== */
+

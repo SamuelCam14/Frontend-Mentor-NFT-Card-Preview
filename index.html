@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>NFT preview card component</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <main>
+      <article class="preview-card">
+        <picture class="nft-img"> <!-- We assume for practical purposes two images of different resolutions -->
+          <source media="(max-width:768px)" srcset="images/image-equilibrium.jpg">
+          <source media="(min-width:769px)" srcset="images/image-equilibrium.jpg">
+          <img class="view" src="images/image-equilibrium.jpg" alt="Ntf image">
+        </picture>
+        <div class="nft-info">
+          <h1>Equilibrium #3429</h1>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+          <div class="price-spaceb">
+            <span class="nft-price">
+              <img src="images/icon-ethereum.svg"> 0.041ETH
+            </span>
+            <span class="time-remaining">
+              <img src="images/icon-clock.svg"> 3 days left
+            </span>
+          </div>
+        </div>
+        <hr class="divider-price">
+        <footer class="author">
+          <span>
+            <img src="images/image-avatar.png" alt="image-avatar" class="avatar">Creation of&nbsp;<em class="author-name">Jules Wyvern</em>
+          </span>
+        </footer>
+      </article>
+    </main>
+  </body>
+
+  </html>
